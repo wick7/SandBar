@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Beach from './assets/long_beach.jpg';
+import Info from './Sections/Info';
+import Header from './Sections/Header';
+import Nav from './Components/Nav';
+
+const Main = styled.div`
+  background: url(${Beach});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding: 25px 50px;
+`
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+      <Nav />
+      <Header />
+      <Info />
+    </Main>
   );
 }
 
