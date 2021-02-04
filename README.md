@@ -2,7 +2,7 @@
 
 Landing page for fictitious resort.
 
-## Preview
+## Site Preview
 
 ## Install & Run
 
